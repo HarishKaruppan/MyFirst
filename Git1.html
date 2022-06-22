@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>June 21</title>
+    <link rel="stylesheet" href="21style.css">
+    <style>
+        a:link{
+    color:red;
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: black;
+    background-color: blueviolet;
+}
+.list{
+    list-style-type: lower-alpha;
+}
+li{
+    display: block;
+}
+div{
+    max-width: 600px;
+    margin: auto;
+}
+.border{
+    border: 1px solid black;
+}
+.z-image{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 29%;
+    z-index: -1;
+}
+.z0image{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 29%;
+    z-index: -2;
+    width: 205px;
+    height: auto;
+}
+
+    </style>
 </head>
 <body>
-    <h1>How is this?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus exercitationem dolorem molestias praesentium doloremque, explicabo, quidem nihil recusandae ex natus quia minus sint saepe vitae sunt possimus deleniti numquam.</p>
+    <div class="border">
+        <ul>
+            <a href="##"><li>Link</li></a>
+            <a href="#"><li>Visited</li></a>
+            <a href="###"><li>hover</li></a>
+            <a href="#"><li>Active</li></a>
+        </ul>
+        <ul class="list">
+            <a href="##"><li>Link</li></a>
+            <a href="#"><li>Visited</li></a>
+            <a href="###"><li>hover</li></a>
+            <a href="#"><li>Active</li></a>
+        </ul>
+    </div>
+    <div>
+        <img class="z-image" src="Banner.jpg">
+    </div>
+    <div>
+        <img class="z0image" src="Moon.jpeg">
+    </div>
 </body>
 </html>
